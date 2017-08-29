@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assisstant.uz Login</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">    
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/loginStyle.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+
+<div id="body_div" class="container">
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="left_side">  
+  <div id="chart_div"></div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="right_side">
+ <div class="row" id="top_div">
+  <div class="text-center">
+  <label>Assistant.uz<br><h3>Find your dream job with us</h3></label>
+  </div>
+ </div> <!-- ./row-->
+ <!-- ./container-->
+
+<div class="row" id="middle_div">
+  <div id="LoginForm" class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+  <form class="form-horizontal" id="login_form">
+     <div class="form-group">
+       <label for="inputEmail" class="col-sm-3 control-label">Email</label>
+       <div class="col-sm-9"><input type="email" class="form-control" id="inputEmail" placeholder="Email"></div>
+     </div>
+  
+     <div class="form-group">
+      <label for="inputPassword" class="col-sm-3 control-label">Password</label>
+      <div class="col-sm-9"><input type="password" class="form-control" id="inputPassword" placeholder="Password"></div>
+     </div>
+  
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-6"><button type="submit" class="btn btn-default" id="loginBut">Sign in</button></div>
+    </div>
+  
+   <div class="form-group">
+     <div class="col-sm-offset-3 col-sm-6">
+     <a href="#" class="text-center" id="registration" data-toggle="modal" data-target="#regModal">Registration</a></div>
+   </div>
+  </form>
+  </div> <!-- ./col-... -->
+</div> <!-- ./row -->
+
+	<div class="row col-md-12" id="bottom_div">
+	  <div class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1" id="sponsors">
+        <img src="images/MDIS.png" alt="mdis" class="img-circle" width="100">
+        <img src="images/INHA.png" alt="inha" class="img-rounded" height="80">
+      </div>
+    </div>
+</div><!--/#right_side-->
+<div class="row col-md-12 text-center" ><label><p class="help-block">If your browser do not react on your actions try "allow blocked content" in options</p></label></div>
+
+<!-- Registration window-->
+<div class="modal fade" id="regModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">x</span>
+        </button>
+        <h4 class="modal-title text-center">Registration form</h4>
+      </div> <!-- /.modal-header-->
+      
+      <div class="modal-body">
+<form class="form-horizontal" id="reg_form">
+	 <div class="form-group">
+       <label class="col-sm-4 control-label">First Name <span class="ampersand">*</span></label>
+       <div class="col-sm-8"><input type="text" class="form-control" id="input_First_Name" placeholder="First Name"></div>
+     </div>
+     
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Second Name <span class="ampersand">*</span></label>
+       <div class="col-sm-8"><input type="text" class="form-control" id="input_Second_Name" placeholder="Second Name"></div>
+     </div>
+
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Email <span class="ampersand">*</span></label>
+       <div class="col-sm-8"><input type="email" class="form-control" id="input_Email" placeholder="example@mail.com"></div>
+     </div>
+  
+     <div class="form-group">
+      <label class="col-sm-4 control-label">Password <span class="ampersand">*</span></label>
+      <div class="col-sm-8"><input type="password" class="form-control" id="input_Password" placeholder="Ex@mple-123"></div>
+     </div>
+     
+     <div class="form-group">
+      <label class="col-sm-4 control-label">Confirm password <span class="ampersand">*</span></label>
+      <div class="col-sm-8"><input type="password" class="form-control" id="input_confirm_Password" placeholder="Ex@mple-123"></div>
+     </div>
+     
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Phone number <span class="ampersand">*</span></label>
+       <div class="col-sm-8"><input type="text" class="form-control" id="input_Phone_Number" placeholder="+998901234567"></div>
+     </div>
+     
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Place of work</label>
+       <div class="col-sm-8"><input type="text" class="form-control" id="input_work_place" placeholder="Examples company"></div>       
+     </div>
+     <p class="help-block text-center">If you are not a student you do not need to fill information about your university</p>
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Place of study</label>
+       <div class="col-sm-8"><input type="text" class="form-control" id="input_Study_place" placeholder="University of Examples"></div>
+     </div>
+     
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Graduation Date</label>
+       <div class="col-sm-8"><input type="date" class="form-control" id="input_Graduation_Date" value="2019-05-25"></div>
+     </div>
+     
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Type of work</label>
+       <div class="col-sm-8"><input type="text" class="form-control" id="input_Occupation" placeholder="Programmer of examples"></div>
+     </div>
+     
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Skills</label>
+       <div class="col-sm-8"><textarea type="text" class="form-control" id="input_skills" placeholder="C++, MySQL, Can fly" rows="5"></textarea></div>
+     </div>
+     
+     <div class="form-group">
+       <label class="col-sm-4 control-label">Bio.</label>
+       <div class="col-sm-8"><textarea type="text" class="form-control" id="input_bio" placeholder="I want to be a spider-man" rows="5"></textarea></div>
+     </div>
+     
+</form>
+      </div> <!-- /.modal-body -->
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="saveBut">Submit</button>
+      </div> <!-- /.modal-footer -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+ </div><!-- /.modal -->
+</div><!--/.body_div-->
+	<!-- Scripts -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->  
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/loginFunctions.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+// JavaScript Document
+$(document).ready(function()
+{
+	"use strict";
+	
+	if($("#teamInfo").html() === "No Team")
+	{
+		$("#find_leave_Team").text("Find team");
+	} else 
+	{
+		$("#find_leave_Team").text("Leave team");
+	}
+	
+	var bool = true;
+	$("#edit_Profile_Button").click(function()
+	{
+		if(bool)
+		{
+			bool = false;
+			$("#edit_Profile_Button").text("Save changes");
+			
+			$("td").each(function() 
+			{
+            	if($(this).hasClass("editable"))
+				{
+					var editableVar = $(this).text();
+					if($(this).attr("id") === "userImg")
+					{
+					}
+					if($(this).attr("id") === "bio")
+					{	
+						$(this).text("").html("<textarea type=text rows=6 cols=80>" + editableVar + "</textarea>"); 
+					} 
+					else if($(this).attr("id") === "date") 
+					{	
+						$(this).text("").html("<input type=date value=" + editableVar + ">");
+					} 
+					else 
+					{
+						$(this).text("").html("<input type=text value=" + editableVar + ">"); 
+					}
+				}
+        	});
+			
+		} else {
+			bool = true;
+			$("#edit_Profile_Button").text("Change information");
+			
+			$("td").each(function() 
+			{
+            	if($(this).hasClass("editable"))
+				{
+					if($(this).attr("id") === "bio")
+					{
+						$(this).html($("textarea",this).val());
+					} 
+					else if($(this).attr("id") === "date") 
+					{
+						$(this).html($("input",this).val());
+					} 
+					else 
+					{
+						$(this).html($("input",this).val()); 
+					}
+				}
+        	});
+		} // End of if(bool) ... else ...		
+		
+	}); // End of #editProfileButton
+}); // End of $(document).ready(function()

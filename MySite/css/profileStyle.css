@@ -1,0 +1,50 @@
+/* CSS Document */
+
+.userIcon
+{
+	margin-top: -5px;
+	width: 36px;
+	height: 35px;
+}
+
+#UserInfoTable
+{
+	margin-top: -20px;
+}
+
+td
+{
+	width: 150px;
+}
+
+#bio
+{
+	padding-right: 100px;
+	width: 200px;
+}
+
+#edit_Profile_Button
+{
+	margin-left: 45%;
+}
+
+.filestyle
+{
+	width: 50px;
+}
+
+#input_img
+{
+	margin-top:15px;
+}
+
+img
+{
+	margin-left: -10px;
+	margin-right:20px;
+}
+
+h4
+{
+	text-shadow: 5px 10px 20px rgba(155,154,154,1.00);
+}

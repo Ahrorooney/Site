@@ -1,0 +1,37 @@
+users variables = 
+{
+	id
+	first name
+	second name
+	third name
+	email
+	password
+	phone number
+	bio
+	graduation date	
+	place of work (!!!)
+	place of study
+	type of work
+	tasks Taken
+	tasks Given
+	grade
+	img
+	team
+	teamLeader(true if you are team leader/false other wise)(!!!)
+	isStudent(true if you are student/false otherwise)(!!!)
+	favorite users
+}
+
+tasks=
+{
+	title
+	body
+	deadline
+	payment
+	author
+	id	
+}
+
+news = 
+{
+}

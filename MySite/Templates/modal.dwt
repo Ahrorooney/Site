@@ -1,0 +1,33 @@
+<!--Modal Window-->
+<div class="modal fade" id="task_add">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">x</span>
+        </button>
+        	<h4 class="modal-title text-center">Add your task</h4>
+        	<div class="input-group"><span class="input-group-addon"><strong>Title</strong></span><input type="text" class="form-control" id="modalTitle"></div>
+      </div> <!-- /.modal-header-->
+      
+      <div class="modal-body">        
+        <div>
+          <div class="input-group"><span class="input-group-addon">Body</span>
+            <textarea type="text" class="form-control" id="modalBodyText"></textarea>
+          </div>
+          <div class="input-group">
+            <input class="form-control" type="date" value="2017-01-01">
+            <span class="input-group-addon">Time</span></div>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="SUM" id="money">
+            <span class="input-group-addon">Payment</span></div>
+        </div>
+      </div> <!-- /.modal-body -->
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="saveBut">Submit</button>
+      </div> <!-- /.modal-footer -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -1,0 +1,47 @@
+/* CSS Document */
+body
+{
+}
+
+.container .row
+{
+	margin-left: 10%;
+}
+
+.vcenter 
+{
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+.userIcon
+{
+	margin-top: -5px;
+	width: 36px;
+	height: 35px;
+}
+
+.input-group
+{
+	padding: 3px;
+	border:1px solid #DCDCDC;
+	width: 100%;
+}
+
+.taskBtn
+{
+	margin-top:5px;
+	border-bottom: 0px;
+}
+
+#taskTable
+{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+td
+{
+	width: 110px;
+}

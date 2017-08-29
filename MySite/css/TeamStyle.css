@@ -1,0 +1,19 @@
+/* CSS Document */
+.userIcon
+{
+	margin-top: -5px;
+	width: 36px;
+	height: 35px;
+}
+
+.card
+{
+	float: left;
+	width: 25%;
+}
+
+.card img
+{
+	width: 100%;
+	height: 280px;
+}

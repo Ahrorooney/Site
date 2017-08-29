@@ -1,0 +1,30 @@
+/* CSS Document */
+body
+{
+	box-shadow:inset 2px 0px 100px grey, inset 0px 0px 100px grey;
+}
+
+.userIcon
+{
+	margin-top: -5px;
+	width: 36px;
+	height: 35px;
+}
+
+.input-group
+{
+	padding: 3px;
+	border:1px solid #DCDCDC;
+	width: 100%;
+}
+
+.row
+{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.jumbotron
+{
+	padding: 50px;
+}

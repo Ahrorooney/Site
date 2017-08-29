@@ -1,0 +1,30 @@
+/* CSS Document */
+.userIcon
+{
+	margin-top: -5px;
+	width: 36px;
+	height: 35px;
+}
+
+.card
+{
+	float:left;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.card img
+{
+	width: 200px;
+	height: 90px;
+}
+
+#prev_step, #next_step
+{
+	margin-top: 15%;
+	cursor: pointer;
+}
+
+.row .col-sm-10
+{
+}
